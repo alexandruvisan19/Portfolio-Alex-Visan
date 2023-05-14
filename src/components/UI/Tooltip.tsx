@@ -42,7 +42,7 @@ function Tooltip({ text, children }: { text: string; children: JSX.Element }) {
 					className={`${position} absolute bottom-0 w-2 h-2 bg-[#1e1e1e] border-r border-b transform -translate-x-1/2 translate-y-1/2 rotate-45`}
 				/>
 			</div>
-			<div onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+			<div className="flex p-1" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
 				{children}
 			</div>
 		</div>

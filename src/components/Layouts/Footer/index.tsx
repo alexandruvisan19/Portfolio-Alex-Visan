@@ -1,7 +1,5 @@
-import { AiOutlineBell } from "react-icons/ai";
-import { BiGitBranch } from "react-icons/bi";
-
-import Tooltip from "../../../../UI/Tooltip";
+import { Bell, Branch } from "../../../theme/Icons/index.ts";
+import Tooltip from "../../UI/Tooltip.tsx";
 
 function Footer() {
 	return (
@@ -9,16 +7,14 @@ function Footer() {
 			<div id="left-side">
 				<ul className="[&>li]:px-1 [&>li]:mx-2 [&>li]:hover:bg-purple-600 [&>li]:hover:bg-opacity-25">
 					<li>
-						<span>
-							<a href="https://github.com/alexandruvisan19/Portfolio-Alex-Visan" target="_blank">
-								<Tooltip text="Leads to the master branch">
-									<>
-										<BiGitBranch className="inline-block" size="1.5em" />
-										<span>master</span>
-									</>
-								</Tooltip>
-							</a>
-						</span>
+						<a href="https://github.com/alexandruvisan19/Portfolio-Alex-Visan" target="_blank">
+							<Tooltip text="Leads to the master branch">
+								<>
+									<Branch />
+									<span>master</span>
+								</>
+							</Tooltip>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -26,7 +22,7 @@ function Footer() {
 				<ul className="[&>li]:py-[3.5px] [&>li]:px-1 [&>li]:mx-2 [&>li]:hover:bg-purple-600 [&>li]:hover:bg-opacity-25">
 					<li>
 						<Tooltip text="No notifications">
-							<AiOutlineBell size="1.3em" />
+							<Bell />
 						</Tooltip>
 					</li>
 				</ul>

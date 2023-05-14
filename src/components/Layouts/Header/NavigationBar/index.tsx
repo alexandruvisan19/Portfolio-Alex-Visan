@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import NavigationItem from "./NavigationItem";
-import { ITabsProps } from "../../../../../../data";
+import NavigationItem from "src/components/Layouts/Header/NavigationBar/NavigationItem/index.tsx";
+import { ITabsProps } from "src/data/index.tsx";
 
 function NavigationBar({ tabs }: { tabs: ITabsProps }) {
 	const [activeTab, setActiveTab] = useState("");

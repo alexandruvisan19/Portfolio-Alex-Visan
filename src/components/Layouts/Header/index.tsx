@@ -1,5 +1,5 @@
-import { ITabsProps } from "../../../../../data";
-import NavigationBar from "./NavigationBar";
+import { ITabsProps } from "../../../data/index.tsx";
+import NavigationBar from "./NavigationBar/index.tsx";
 
 function Header({ tabs } : { tabs: ITabsProps }) {
 	return (
